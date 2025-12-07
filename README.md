@@ -29,3 +29,37 @@ Membuat laporan JSON lengkap dengan ringkasan risiko.
 Clone repository ini:
 git clone https://github.com/iyanji/osc.git
 cd osc
+
+USAGE:
+    python3 osc.py [OPTIONS] TARGET_URL
+
+OPTIONS:
+    -s, --session SESSION    Session cookie for authenticated scanning
+    -t, --threads THREADS    Number of threads (default: 10)
+    --timeout TIMEOUT        Request timeout in seconds (default: 10)
+    -o, --output FILE        Output file for JSON report
+    -h, --help               Show this help message
+
+EXAMPLES:
+    Basic scan:
+    python3 osc.py https://example.com
+
+    Scan with session cookie:
+    python3 osc.py -s "session_cookie_value" https://example.com
+
+    Custom threads and timeout:
+    python3 osc.py -t 5 --timeout 15 https://example.com
+
+    Save report to file:
+    python3 osc.py -o scan_report.json https://example.com
+
+FEATURES:
+    • API Keys & Tokens detection
+    • Database credentials scanning
+    • Sensitive file discovery
+    • Configuration files detection
+    • Email addresses and internal IPs
+    • Financial data scanning
+    • Multi-threaded scanning
+    • JSON report generation
+
