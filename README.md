@@ -27,5 +27,5 @@ Membuat laporan JSON lengkap dengan ringkasan risiko.
 
 🔹 Instalasi
 Clone repository ini:
-git clone https://github.com/iyanji/OSC.git
+git clone https://github.com/iyanji/osc.git
 cd osc
